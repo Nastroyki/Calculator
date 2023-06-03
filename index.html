@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/calculator.js"></script>
+</head>
+
+<body>
+  <div id="calculator_body">
+    <div id="display">
+      <input type="text" id="output-data" name="numbers_input" value="" readonly>
+      <input type="text" id="input-data" name="numbers_input" value="0" readonly>
+    </div>
+    <div id="len-list">
+      <tfoot>
+        <tr>
+          <td colspan="2"><select class="select_t" id="len-from">
+              <option value="0.01">centimeters</option>
+              <option value="1000">kilometers</option>
+              <option value="1">meters</option>
+            </select></td>
+          <td><button class="Arrow">></button></td>
+          <td colspan="2"><select class="select_t test" id="len-to">
+              <option class="opt" value="0.01">centimeters</option>
+              <option class="opt" value="1000">kilometers</option>
+              <option class="opt" value="1">meters</option>
+            </select></td>
+        </tr>
+      </tfoot>
+    </div>
+    <div id="mass-list">
+      <tfoot>
+        <tr>
+          <td colspan="2"><select class="select_t" id="mass-from">
+              <option value="0.001">grams</option>
+              <option value="1">kilograms</option>
+              <option value="1000">tonnes</option>
+            </select></td>
+          <td><button class="Arrow">></button></td>
+          <td colspan="2"><select class="select_t test" id="mass-to">
+              <option class="opt" value="0.001">grams</option>
+              <option class="opt" value="1">kilograms</option>
+              <option class="opt" value="1000">tonnes</option>
+            </select></td>
+        </tr>
+      </tfoot>
+    </div>
+    <div id="area-list">
+      <tfoot>
+        <tr>
+          <td colspan="2"><select class="select_t" id="area-from">
+              <option value="0.0001">sq. centimeters</option>
+              <option value="1000000">sq. kilometers</option>
+              <option value="1">sq. meter</option>
+              <option value="10000">hectares</option>
+            </select></td>
+          <td><button class="Arrow">></button></td>
+          <td colspan="2"><select class="select_t test" id="area-to">
+              <option class="opt" value="0.0001">sq. centimeters</option>
+              <option class="opt" value="1000000">sq. kilometers</option>
+              <option class="opt" value="1">sq. meter</option>
+              <option class="opt" value="10000">hectares</option>
+            </select></td>
+        </tr>
+      </tfoot>
+    </div>
+
+    <div id="grid-container">
+      <button id="memory-plus" data-violet="violet">M+</button>
+      <button id="memory-minus" data-violet="violet">M-</button>
+      <button id="convert" data-violet="violet">CONVERT</button>
+      <button id="delete" data-orange="orange">⇐</button>
+
+      <button id="reset-memory">MC</button>
+      <button id="clear" data-orange="orange">C</button>
+      <button id="sign">+/-</button>
+      <button id="percent">%</button>
+      <button id="÷" data-orange="orange">÷</button>
+
+      <button id="add-memory">MR</button>
+      <button id="7">7</button>
+      <button id="8">8</button>
+      <button id="9">9</button>
+      <button id="*" data-orange="orange">*</button>
+
+      <button id="sqrt">√x</button>
+      <button id="4">4</button>
+      <button id="5">5</button>
+      <button id="6">6</button>
+      <button id="+" data-orange="orange">+</button>
+
+      <button id="power">x^n</button>
+      <button id="1">1</button>
+      <button id="2">2</button>
+      <button id="3">3</button>
+      <button id="-" data-orange="orange">-</button>
+
+      <button id="fac">x!</button>
+      <button id="0">0</button>
+      <button id=".">.</button>
+      <button id="equal">=</button>
+    </div>
+    <div id="grid-container-conv">
+      <button id="convert-len" data-violet="violet">LEN</button>
+      <button id="convert-mass" data-violet="violet">MASS</button>
+      <button id="convert-area" data-violet="violet">AREA</button>
+
+      <button id="clear" data-orange="orange">C</button>
+      <button id="return">
+        <div id="iconcalc">
+          + -<br>
+          × ÷
+        </div>
+      </button>
+      <button id="delete" data-orange="orange">⇐</button>
+
+      <button id="7">7</button>
+      <button id="8">8</button>
+      <button id="9">9</button>
+
+      <button id="4">4</button>
+      <button id="5">5</button>
+      <button id="6">6</button>
+
+      <button id="1">1</button>
+      <button id="2">2</button>
+      <button id="3">3</button>
+
+      <button id="0">0</button>
+      <button id=".">.</button>
+      <button id="equal-conv">=</button>
+    </div>
+  </div>
+</body>
+
+</html>

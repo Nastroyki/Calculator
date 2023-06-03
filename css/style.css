@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+  background-color: rgb(20, 24, 27);
+  color: blanchedalmond;
+  font-family: 'Poppins', sans-serif;
+}
+
+#calculator_body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width:400px;
+  height: 650px;
+  background-color: rgb(42, 46, 55);
+  border: 3px solid white;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color:white;
+}
+
+
+#display{
+  height: 30%;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:10%;
+}
+
+#input-data, #output-data{
+  width: 90%;
+  height: 40%;
+  margin:5px;
+  color:white;
+  background-color: inherit;
+  font-size: 4rem;
+  text-align: right;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  pointer-events: none;
+  text-overflow: ellipsis;
+}
+
+#output-data{
+  font-size: 2rem;
+  color: rgb(181, 181, 181);
+}
+
+.just_block
+{
+  width: 50%;
+  height: 10%;
+  margin:10px;
+  background-color: beige;
+  color:black;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  width: 90%;
+  height: 70%;
+  margin:5%;
+  justify-content: center;
+}
+
+#grid-container-conv{
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  width: 90%;
+  height: 70%;
+  margin:5%;
+  justify-content: center;
+}
+
+button{
+  font-size: 1.3rem;
+  background-color: rgb(47, 54, 70);
+  border: none;
+}
+
+
+button:hover, #clear-button:hover{
+  background: rgb(113,136,252);
+  background: radial-gradient(circle, rgba(113,136,252,1) 13%, rgba(136,116,217,1) 100%);
+}
+
+#grid-container button, #grid-container-conv button {
+  /* border-radius: 15px; */
+  width: 100%;
+  height: 100%;
+  color:white;
+}
+
+#grid-container [data-violet]{
+  color: rgb(196, 86, 218);
+}
+
+#grid-container-conv [data-violet]{
+  color: rgb(196, 86, 218);
+}
+
+#grid-container [data-orange]{
+  color:rgb(255, 128, 0);
+}
+
+#grid-container-conv [data-orange]{
+  color:rgb(255, 128, 0);
+}
+
+#grid-container #equal{
+  grid-column: 4 / span 2;
+  background-color: rgb(196, 86, 218);
+}
+
+#grid-container-conv #equal-conv{
+  background-color: rgb(196, 86, 218);
+}
+
+
+select{
+  width: auto;
+  height: 30px;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.test {
+  padding-left: 0px;
+}
+
+.select_t{
+  background-color: rgb(47, 54, 70);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+}
+
+
+.Arrow{
+  width: auto;
+  color: white;
+}
+
+#len-list, #mass-list, #area-list{
+  background-color: rgb(47, 54, 70);
+  width: 90%;
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#return {
+  position: relative;
+}
+#iconcalc {
+  position: absolute;
+  left: calc(50% - 15px);
+  top: calc(50% - 17px);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #C456DA;
+  border-radius: 4px;
+  font-family: 'Poppins', monospace;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #C456DA;
+  line-height: 85%;
+}
+#convert {
+  grid-column: 3 / span 2;
+}
